@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HAY BURRO — Where will he go next?</title>
+  <meta name="description" content="HAY BURRO — where will he go next? Join the list." />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:title" content="HAY BURRO — Where will he go next?" />
+  <meta property="og:description" content="Where will he go next? Join the list." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://hayburro.com" />
+  <meta property="og:image" content="assets/burro.png" />
+
+  <link rel="icon" href="assets/icon.png" type="image/png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anybody:wght@800;900&family=Archivo:wght@400;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ============================ HEADER ============================ -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="brand" aria-label="HAY BURRO">HAY BURRO</a>
+
+      <div class="header-actions">
+        <!-- Language toggle: see README "Languages (EN / ES)" -->
+        <div class="lang-toggle" role="group" aria-label="Language">
+          <button type="button" class="lang-btn" data-lang="en">EN</button>
+          <span class="lang-sep" aria-hidden="true">/</span>
+          <button type="button" class="lang-btn" data-lang="es">ES</button>
+        </div>
+
+        <!-- Contact Us -> info@hayburro.com -->
+        <a class="btn-contact" href="mailto:info@hayburro.com">
+          <span data-i18n="contact">CONTACT US</span> <span class="tri" aria-hidden="true">&#9655;</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================ HERO ============================ -->
+  <main class="container">
+    <section class="hero">
+      <!-- ===================== MASCOT (above the title) ===================== -->
+      <div class="mascot">
+        <picture>
+          <source srcset="assets/burro.webp" type="image/webp" />
+          <img src="assets/burro.png" alt="HAY BURRO mascot — a donkey wearing pink sunglasses" width="681" height="844" />
+        </picture>
+      </div>
+
+      <h1 class="headline" aria-label="WHERE WILL HE GO NEXT?">
+        <span class="line" data-i18n-headline="line1"></span>
+        <span class="line" data-i18n-headline="line2"></span>
+      </h1>
+
+      <!-- ===================== SIGNUP FORM (Loops.so) ===================== -->
+      <form id="signup-form" class="signup" novalidate>
+        <div class="field">
+          <label for="name" data-i18n="label_name">NAME</label>
+          <input id="name" name="name" type="text" autocomplete="name"
+                 data-i18n-ph="ph_name" placeholder="Enter your name" />
+        </div>
+
+        <div class="field">
+          <label for="email" data-i18n="label_email">EMAIL</label>
+          <input id="email" name="email" type="email" required autocomplete="email"
+                 class="mono" data-i18n-ph="ph_email" placeholder="SECURE.COMMS@DOMAIN.COM" />
+          <span class="encrypted mono">
+            <span class="lock" aria-hidden="true">&#9679;</span>
+            <span data-i18n="encrypted">ENCRYPTED INPUT</span>
+          </span>
+        </div>
+
+        <button type="submit" class="btn-submit">
+          <span data-i18n="submit">LET'S GO</span> <span class="tri" aria-hidden="true">&#9655;</span>
+        </button>
+
+        <p id="form-status" class="form-status mono" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <!-- ============================ FOOTER ============================ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <nav class="footer-links mono">
+        <a href="https://www.instagram.com/ayburro" target="_blank" rel="noopener noreferrer" data-i18n="footer_instagram">INSTAGRAM</a>
+        <a href="privacy.html" data-i18n="footer_privacy">PRIVACY</a>
+      </nav>
+      <p class="footer-copy mono" data-i18n="footer_copy">&copy; 2026 HAYBURRO. ALL RIGHTS RESERVED.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
